@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> FORMS IN HTML</title>
+        </head>
+        <body>
+            <form action="scripts/data.php" >
+                <label>Name: </label>
+                <input type="text" name="student_name" id="student_name">
+                <br>
+                <label for="email_address">Email: </label>
+                <input type="email" name="email_address" id="email_address">
+                <br>
+                <textarea name="bio" id="bio" rows="25" cols="20"              ">
+                    Please enter your bio here
+                </textarea>
+                <br>
+                ,<fieldset>
+                    <legend>subjects:</legend>
+                <input type="checkbox" name="math" id="math" value="math" checked>
+                <label for="math">Math</label>
+                <br>
+                <input type="checkbox" name="english" id="english" value="english" checked>
+                <label for="english">english</label>
+                <br>
+                <input type="checkbox" name="science" id="science" value="science" checked>
+                <label for="science">science</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                </fieldset>
+                <label>Classes: </label>
+                <select name="classes" id="classes">
+                    <option value="">--Select Preffered Class--</option>
+                    <option value="Physical">Physical</option>
+                    <option value="Virtual">Virtual</option>
+                </select>
+                <br>
+                <label for="Passport Photo">Passport Photo: </label>
+                <input type="file" id="passport_photo" name="passport_photo" accept="image/*">
+                <hr>
+                <input type="button" id="btn_ok" name="btn_ok" value="OK!" onclick="">
+                <input type="reset" id="clear" name="clear" value="Clear form">
+                <input type="submit" id="submit" name="submit" value="Register">
+            </form>
+        </body>
+</html>
